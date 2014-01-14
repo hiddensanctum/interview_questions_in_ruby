@@ -6,7 +6,7 @@ by James Chuang
 
 ## Description
 
-Technical Interview questions are always a challenge for new programmers. To help with this I've decided to create a segment just on technical interview questions in ruby, both to help myself and others like me. Check out my [blog posts]() for more explanation
+Technical Interview questions are always a challenge for new programmers. To help with this I've decided to create a segment just on technical interview questions in ruby, both to help myself and others like me. Check out my [blog posts](http://www.jlchuang.com/tags/Interview%20Question) for more explanation
 
 ## Usage
 
