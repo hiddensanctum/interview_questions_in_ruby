@@ -28,11 +28,11 @@ class List
 
 	def add_without_tail(node)
 		if @head
-			x = @head
-			while(x.next_node)
-				x = x.next_node
+			current = @head
+			while(current.next_node)
+				current = current.next_node
 			end
-			x.next_node = node
+			current.next_node = node
 		else
 			@head = node
 		end
@@ -52,27 +52,25 @@ class List
 	end
 
 	def traverse
-		temp = @head
-		count = 0
-		while (count < @length)
-			puts temp.value
-			count += 1
-			temp = temp.next_node
+		current = @head
+		while (current)
+			puts current.value
+			current = current.next_node
 		end
 	end
 
 	def reverse
-		x = @head
-		y = @head.next_node
-		x.next_node = nil
-		z = nil
-		while (y)
-			z = y.next_node
-			y.next_node = x
-			x = y
-			y = z
+		current = @head
+		next_node = @head.next_node
+		current.next_node = nil
+		rest = nil
+		while (next_node)
+			rest = next_node.next_node
+			next_node.next_node = current
+			current = next_node
+			next_node = rest
 		end
-		@head = x
+		@head = current
 	end
 end
 
